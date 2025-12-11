@@ -38,8 +38,8 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
         <>
             <nav
                 className={`fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-6 py-4 md:py-6 transition-all duration-500 ${scrolled
-                        ? 'bg-black/80 backdrop-blur-lg border-b border-[#333] py-3 md:py-4'
-                        : 'bg-black/50 backdrop-blur-sm py-4 md:py-6'
+                    ? 'bg-black/80 backdrop-blur-lg border-b border-[#333] py-3 md:py-4'
+                    : 'bg-black/50 backdrop-blur-sm py-4 md:py-6'
                     }`}
             >
                 <div
@@ -87,6 +87,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
                 </button>
 
                 {/* Desktop CTA */}
+                {/* Trigger Deployment Update */}
                 <div className="hidden md:block">
                     <MagneticButton
                         onClick={onOpenModal}

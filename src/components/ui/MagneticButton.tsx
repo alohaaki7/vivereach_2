@@ -1,19 +1,19 @@
 'use client';
 
-import { useRef, useState, ReactNode } from 'react';
+import { useRef, useState, ReactNode, CSSProperties, MouseEvent } from 'react';
 
 interface MagneticButtonProps {
     children: ReactNode;
     className?: string;
     onClick?: () => void;
-    style?: React.CSSProperties;
+    style?: CSSProperties;
 }
 
 export default function MagneticButton({ children, className, onClick, style }: MagneticButtonProps) {
     const btnRef = useRef<HTMLButtonElement>(null);
     const [pos, setPos] = useState({ x: 0, y: 0 });
 
-    const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleMouseMove = (e: MouseEvent<HTMLButtonElement>) => {
         if (!btnRef.current) return;
         const { clientX, clientY } = e;
         const { left, top, width, height } = btnRef.current.getBoundingClientRect();
