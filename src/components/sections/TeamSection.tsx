@@ -75,7 +75,7 @@ export default function TeamSection() {
             rate: 94,
             years: 8,
             avatar: '◢◣',
-            linkedIn: '#',
+            linkedIn: 'https://linkedin.com/in/akmyrat-a-60129b17b',
         },
         {
             codename: 'OPERATOR_02',
